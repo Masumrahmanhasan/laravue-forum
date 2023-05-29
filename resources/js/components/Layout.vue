@@ -1,18 +1,23 @@
 <!--suppress XmlDuplicatedId -->
 <template>
     <div class="w-full absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-auto">
-        <nav class="min-h-[80px] bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900 border-b w-full items-center justify-center flex">
+        <nav
+            class="min-h-[80px] bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900 border-b w-full items-center justify-center flex theme-1-navbar">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <div class="flex items-center gap-2">
-                    <button class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg lg:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600">
-                        <svg viewBox="0 0 20 20" class="w-6 h-6 fill-current text-slate-600" >
-                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <button
+                        class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg lg:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600">
+                        <svg viewBox="0 0 20 20" class="w-6 h-6 fill-current text-slate-600">
+                            <path fill-rule="evenodd"
+                                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                  clip-rule="evenodd"></path>
                         </svg>
                     </button>
-                    <a href="" class="flex items-center">
+                    <RouterLink to="/" class="flex items-center">
                         <!--                            <img src="" class="h-6 mr-3 sm:h-9" alt="Logo" />-->
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-slate-500">LaraForum</span>
-                    </a>
+                        <span
+                            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-slate-500">LaraForum</span>
+                    </RouterLink>
                 </div>
                 <div class="flex md:order-1">
 
@@ -29,7 +34,8 @@
                     </button>
                     <div class="relative hidden md:block">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-5 h-5 text-slate-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            <svg class="w-5 h-5 text-slate-500" aria-hidden="true" fill="currentColor"
+                                 viewBox="0 0 20 20"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                       d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
@@ -40,7 +46,7 @@
                         <form action="" method="GET" class="w-full">
                             <label for="search-navbar"></label>
                             <input type="search" id="search-navbar" name="q" minlength="3" required
-                                   class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                   class="bg-slate-50 block border border-slate-300 dark:bg-slate-700 dark:border-slate-600 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:placeholder-slate-400 dark:text-white focus:border-blue-500 focus:ring-blue-500 p-2 pl-10 rounded-lg text-sm w-full"
                                    placeholder="Search...">
                         </form>
                     </div>
@@ -59,7 +65,8 @@
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2" id="navbar-search">
                     <div class="relative mt-3 md:hidden">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-5 h-5 text-slate-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            <svg class="w-5 h-5 text-slate-500" aria-hidden="true" fill="currentColor"
+                                 viewBox="0 0 20 20"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                       d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
@@ -72,22 +79,27 @@
                     </div>
                     <ul
                         class="flex flex-col p-4 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700">
-                        <li>
-                            <a href=""
-                               class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
-                               aria-current="page">
-                                Home
-                            </a>
-                        </li>
+                        <RouterLink to="/discussions">
+                            <li class="nav-menu">
+                                <a href=""
+                                   class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                                   aria-current="page">
+                                    Discussions
+                                </a>
+                            </li>
+                        </RouterLink>
 
-                        <li>
-                            <button type="button" data-modal-toggle="sign-up-modal"
-                                    class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
-                                Sign up
-                            </button>
-                        </li>
+                        <RouterLink to="/signup">
+                            <li class="nav-menu">
+                                <button type="button" data-modal-toggle="sign-up-modal"
+                                        class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
+                                    Sign up
+                                </button>
+                            </li>
+                        </RouterLink>
 
-                        <li>
+
+                        <li class="nav-menu">
                             <button type="button" data-modal-toggle="login-modal"
                                     class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
                                 Log in
@@ -97,31 +109,39 @@
                         <li>
                             <button type="button" id="profile-dropdown" data-dropdown-toggle="dropdown"
                                     @click="showMenu"
-                                    class="flex items-center gap-2 py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700" aria-current="page">
-                                <span class="rounded-full w-6 h-6 border order-slate-200 shadow"></span> Masum Rahman Hasan
+                                    class="flex items-center gap-2 py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                                    aria-current="page">
+                                <span class="rounded-full w-6 h-6 border order-slate-200 shadow"></span> Masum Rahman
+                                Hasan
                             </button>
 
-                            <div id="dropdown" class="absolute top-10 z-10 w-44 bg-white rounded divide-y divide-slate-100 shadow dark:bg-slate-700" :class="{'hidden': !isMenuOpen}" style="top: 79px">
+                            <div id="dropdown"
+                                 class="absolute top-10 z-10 w-44 bg-white rounded divide-y divide-slate-100 shadow dark:bg-slate-700"
+                                 :class="{'hidden': !isMenuOpen}" style="top: 79px">
                                 <ul class="py-1 text-sm text-slate-700 dark:text-slate-200">
                                     <li>
-                                        <a href="" class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
+                                        <a href=""
+                                           class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
                                             <i class="fa-solid fa-user w-[20px]"></i> Profile
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
+                                        <a href=""
+                                           class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
                                             <i class="fa-solid fa-cog w-[20px]"></i> Settings
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="" class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
+                                        <a href=""
+                                           class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
                                             <i class="fa-solid fa-gears w-[20px]"></i> Administration
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="py-1">
-                                    <a href="" class="flex items-center gap-2 py-2 px-4 text-red-600 hover:bg-red-100 dark:hover:bg-red-600 dark:hover:text-white">
+                                    <a href=""
+                                       class="flex items-center gap-2 py-2 px-4 text-red-600 hover:bg-red-100 dark:hover:bg-red-600 dark:hover:text-white">
                                         <i class="fa-solid fa-sign-out w-[20px]"></i> Sign out
                                     </a>
                                 </div>
@@ -131,32 +151,33 @@
                 </div>
             </div>
         </nav>
+
         <slot/>
 
-        <Sidebar/>
     </div>
 </template>
 
 <script>
-
-import Sidebar from "./Sidebar.vue";
-export default {
-    name: "Layout",
-    components: {Sidebar},
-    data() {
-        return {
-            isMenuOpen: false
-        }
-
-    },
-    methods: {
-        showMenu() {
-            this.isMenuOpen = !this.isMenuOpen
+    export default {
+        data() {
+            return {
+                isMenuOpen: false
+            }
+        },
+        methods: {
+            showMenu() {
+                this.isMenuOpen = !this.isMenuOpen
+            }
         }
     }
-}
+
 </script>
 
 <style scoped>
+.nav-menu:hover {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    /*box-shadow: rgba(31, 47, 71, 0.25) 1px 20px 40px, rgba(0, 0, 0, 0.1) 1px 1px 5px, rgba(255, 255, 255, 0.4) 1px 1px 1px 0.5px inset;*/
+}
+
 
 </style>
