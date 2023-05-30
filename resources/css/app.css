@@ -8,5 +8,8 @@ body {
 }
 
 .theme-1-navbar {
-    background: rgb(229 237 255/1);
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(180%) blur(5px);
+    background: hsla(0,0%,100%,.8);
 }

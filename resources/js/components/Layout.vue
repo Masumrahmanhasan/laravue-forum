@@ -2,7 +2,7 @@
 <template>
     <div class="w-full absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-auto">
         <nav
-            class="min-h-[80px] bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900 border-b w-full items-center justify-center flex theme-1-navbar">
+            class="min-h-[80px] sticky top-0 bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900 border-b w-full items-center justify-center flex theme-1-navbar">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <div class="flex items-center gap-2">
                     <button

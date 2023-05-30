@@ -11,16 +11,13 @@
                     </div>
                 </div>
                 <div class="w-full flex flex-col" v-for="i in 10">
-                    <a href=""
-                       class="bg-white border-b border-slate-200 flex flex-col gap-3 hover:bg-slate-100 hover:cursor-pointer hover:rounded items-start justify-between lg:flex-row lg:gap-0 px-3 py-5 rounded-lg shadow transition-all w-full">
+                    <div class="bg-white border-slate-200 flex flex-col gap-3 hover:cursor-pointer items-start justify-between lg:flex-row lg:gap-0 px-3 py-5 rounded-lg transition-all w-full">
                         <div class="flex gap-3">
                             <img src="https://ui-avatars.com/api/Admin" alt="Avatar"
-                                 class="rounded w-10 h-10 border border-slate-200"/>
+                                 class="rounded-lg border border-slate-200" style="width: 56px; height: 56px"/>
                             <div class="flex flex-col gap-1">
                                 <div class="flex items-center gap-1">
-                                    <i class="fa-solid fa-star text-green-500" title="Following"></i>
-
-                                    <span class="font-medium text-slate-500">
+                                    <span class="font-large text-slate-500">
                                         This is for test
                                     </span>
                                 </div>
@@ -54,11 +51,15 @@
                                 <span class="text-sm text-slate-500 flex items-center gap-1">
                                     <i class="fa-solid fa-lock text-slate-400"></i>
                                 </span>
+                                <span class="text-sm text-slate-500 flex items-center gap-1">
+                                    <a class="bg-blue-500 block px-0 py-2 rounded-full text-center text-white text-xs w-28">Support</a>
+                                </span>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
