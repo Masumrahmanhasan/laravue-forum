@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'v1'], function (){
     Route::get('tags', [\App\Http\Controllers\Api\V1\TagController::class, 'index']);
+
 });
