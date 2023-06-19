@@ -6,10 +6,3 @@
 body {
     background-color: #f7f7f8;
 }
-
-.theme-1-navbar {
-    position: sticky;
-    top: 0;
-    backdrop-filter: saturate(180%) blur(5px);
-    background: hsla(0,0%,100%,.8);
-}
