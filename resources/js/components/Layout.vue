@@ -1,4 +1,21 @@
-<!--suppress XmlDuplicatedId -->
+<script setup>
+import { ref } from 'vue';
+import LoginModal from "../components/modal/LoginModal.vue";
+
+const isMenuOpen = ref(false)
+const isSidebarOpen = ref(false)
+const isModalOpen = ref(false)
+
+const showMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+}
+
+const showSidebar = () => {
+    isSidebarOpen.value = !isSidebarOpen.value
+}
+
+</script>
+
 <template>
     <div class="w-full absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-auto">
         <nav
@@ -45,8 +62,8 @@
                             <span class="sr-only">Search icon</span>
                         </div>
                         <form action="" method="GET" class="w-full">
-                            <label for="search-navbar"></label>
-                            <input type="search" id="search-navbar" name="q" minlength="3" required
+                            <label for="search-navbar1"></label>
+                            <input type="search" id="search-navbar1" name="q" minlength="3" required
                                    class="bg-slate-50 block border border-slate-300  focus:border-blue-500 focus:ring-blue-500 p-2 pl-10 rounded-lg text-sm w-full"
                                    placeholder="Search...">
                         </form>
@@ -66,8 +83,8 @@
                     </button>
                 </div>
                 <div class="items-center justify-between w-full md:flex md:w-auto md:order-2" id="navbar-search"
-                    :class="{'hidden': !isSidebarOpen}"
-                    >
+                     :class="{'hidden': !isSidebarOpen}"
+                >
                     <div class="relative mt-3 md:hidden">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg class="w-5 h-5 text-slate-500" aria-hidden="true" fill="currentColor"
@@ -87,7 +104,7 @@
                         <RouterLink to="/discussions">
                             <li class="nav-menu">
                                 <a href=""
-                                   class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white  dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                                   class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
                                    aria-current="page">
                                     Discussions
                                 </a>
@@ -97,7 +114,7 @@
                         <RouterLink to="/signup">
                             <li class="nav-menu">
                                 <button type="button"
-                                        class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white  dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
+                                        class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
                                     Sign up
                                 </button>
                             </li>
@@ -105,8 +122,9 @@
 
 
                         <li class="nav-menu">
-                            <button type="button" data-modal-toggle="login-modal"
-                                    class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
+                            <button type="button"
+                                    @click="isModalOpen = true"
+                                    class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
                                 Log in
                             </button>
                         </li>
@@ -158,35 +176,10 @@
         </nav>
 
         <slot/>
-
-        <LoginModal/>
-
+        <LoginModal :show="isModalOpen" @close="isModalOpen = false"/>
     </div>
 </template>
 
-<script>
-import LoginModal from "@/components/modal/LoginModal.vue";
-    export default {
-        components: {
-            LoginModal
-        },
-        data() {
-            return {
-                isMenuOpen: false,
-                isSidebarOpen: false
-            }
-        },
-        methods: {
-            showMenu() {
-                this.isMenuOpen = !this.isMenuOpen
-            },
-            showSidebar() {
-                this.isSidebarOpen = !this.isSidebarOpen
-            }
-        }
-    }
-
-</script>
 
 <style scoped>
 
