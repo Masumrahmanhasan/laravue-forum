@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue';
-import LoginModal from "../components/modal/LoginModal.vue";
+import LoginModal from "@/components/modal/LoginModal.vue";
+import SignUpModal from "@/components/modal/SignUpModal.vue";
 
 const isMenuOpen = ref(false)
 const isSidebarOpen = ref(false)
 const isModalOpen = ref(false)
+const isSignUpModalOpen = ref(false)
 
 const showMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
@@ -111,14 +113,14 @@ const showSidebar = () => {
                             </li>
                         </RouterLink>
 
-                        <RouterLink to="/signup">
-                            <li class="nav-menu">
-                                <button type="button"
-                                        class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
-                                    Sign up
-                                </button>
-                            </li>
-                        </RouterLink>
+
+                        <li class="nav-menu">
+                            <button type="button"
+                                    @click="isSignUpModalOpen = true"
+                                    class="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700">
+                                Sign up
+                            </button>
+                        </li>
 
 
                         <li class="nav-menu">
@@ -177,6 +179,7 @@ const showSidebar = () => {
 
         <slot/>
         <LoginModal :show="isModalOpen" @close="isModalOpen = false"/>
+        <SignUpModal :show="isSignUpModalOpen" @closeSignup="isSignUpModalOpen = false"/>
     </div>
 </template>
 
