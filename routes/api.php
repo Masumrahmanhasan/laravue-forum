@@ -25,3 +25,33 @@ Route::group(['prefix' => 'v1'], function (){
     Route::post('login', [\App\Http\Controllers\Api\V1\Auth\LoginController::class, 'login']);
     Route::post('signup', [\App\Http\Controllers\Api\V1\SignupController::class, 'register']);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

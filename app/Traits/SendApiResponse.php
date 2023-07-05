@@ -7,7 +7,7 @@ use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 
-trait sendApiResponse
+trait SendApiResponse
 {
     /**
      * @param mixed|null $data

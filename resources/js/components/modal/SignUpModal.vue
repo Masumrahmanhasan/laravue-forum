@@ -1,15 +1,23 @@
 <script setup>
 
+import {ref} from 'vue';
 import PasswordMeter from "@/components/plugin/PasswordMeter.vue";
 
 defineProps({
     show: Boolean,
     showText: Boolean,
-    showConfirmedText: Boolean
+    showConfirmedText: Boolean,
+    buttonText: Boolean
 })
 
-const signup = () => {
+const name = ref('')
+const email = ref('')
+const password = ref('')
+const password_confirmation = ref('')
 
+
+const signup = () => {
+    this.buttonText = !this.buttonText
 }
 
 </script>
@@ -68,6 +76,7 @@ const signup = () => {
                                                 <div class="flex-1">
                                                     <input type="text"
                                                            id="full_name"
+                                                           v-model="name"
                                                            class="block w-full transition duration-75 rounded-lg shadow-sm outline-none focus:border-primary-500 focus:ring-1 focus:ring-inset focus:ring-primary-500 disabled:opacity-70 border-gray-300"
                                                     >
                                                 </div>
@@ -101,6 +110,7 @@ const signup = () => {
                                                 <div class="flex-1">
                                                     <input type="email"
                                                            id="email"
+                                                           v-model="email"
                                                            class="block w-full transition duration-75 rounded-lg shadow-sm outline-none focus:border-primary-500 focus:ring-1 focus:ring-inset focus:ring-primary-500 disabled:opacity-70 border-gray-300"
                                                     >
                                                 </div>
@@ -135,6 +145,7 @@ const signup = () => {
                                             <div class="relative flex-1">
                                                 <input :type="showText ? 'text' : 'password'"
                                                        id="password"
+                                                       v-model="password"
                                                        class="block w-full transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 disabled:opacity-70 border-gray-300 !pr-8"
                                                        type="password">
                                                 <div
@@ -198,6 +209,7 @@ const signup = () => {
                                             <div class="relative flex-1">
                                                 <input :type="showConfirmedText ? 'text' : 'password'"
                                                        id="confirmed_password"
+                                                       v-model="password_confirmation"
                                                        class="block w-full transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 disabled:opacity-70 border-gray-300 !pr-8"
                                                        type="password">
                                                 <div
@@ -239,7 +251,7 @@ const signup = () => {
 
                             <button type="submit"
                                     class="mt-6 w-full text-white bg-blue-700 disabled:bg-slate-300 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Sign Up
+                                {{ !buttonText ? 'Sign Up': 'Registering'}}
                             </button>
 
                         </form>
