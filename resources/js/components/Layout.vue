@@ -19,7 +19,7 @@ const showSidebar = () => {
 </script>
 
 <template>
-    <div class="w-full absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-auto">
+    <div class="w-full absolute top-0 left-0 right-0 bottom-0 w-full h-full overflow-auto z-10">
         <nav
             class="min-h-[80px] sticky top-0 bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded  border-b w-full items-center justify-center flex text-gray-500">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -157,12 +157,14 @@ const showSidebar = () => {
                                         </a>
                                     </li>
 
-                                    <li>
-                                        <a href=""
-                                           class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
-                                            <i class="fa-solid fa-gears w-[20px]"></i> Administration
-                                        </a>
-                                    </li>
+                                    <RouterLink to="/admin/login">
+                                        <li>
+                                            <a href=""
+                                               class="flex items-center gap-2 py-2 px-4 text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white">
+                                                <i class="fa-solid fa-gears w-[20px]"></i> Administration
+                                            </a>
+                                        </li>
+                                    </RouterLink>
                                 </ul>
                                 <div class="py-1">
                                     <a href=""

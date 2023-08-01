@@ -45,18 +45,17 @@ trait SendApiResponse
 
     /**
      * Send a failed response
-     * @param mixed $data
+     * @param array $data
      * @param string $message
      * @param int $status
      * @return JsonResponse
      */
-    public function failed($data = [], string $message = "", int $status = 400): JsonResponse
+    public function failed(array $data = [], string $message = "", int $status = 400): JsonResponse
     {
         return $this->success($data, $message, $status, false);
     }
 
     /**
-     * @param mixed $data
      * @param null $message
      * @return JsonResponse
      */
@@ -70,7 +69,7 @@ trait SendApiResponse
      * @param int $max
      * @return int
      */
-    protected function limit(int $default = 10, int $max = 50): int
+    private function limit(int $default = 10, int $max = 50): int
     {
         return (int) min(request()->input('limit', $default), $max);
     }

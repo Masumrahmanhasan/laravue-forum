@@ -1,5 +1,8 @@
 <template>
-    <section class="hero-section hidden">
+    <section class="hero-section mb-12">
+        <div class="overlay">
+            <img src="/images/Background.png" alt="">
+        </div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <a href="#"
                class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -102,69 +105,146 @@
             </div>
         </div>
     </section>
+    <section class="py-10 relative">
+        <div class="absolute -right-0 top-2/4 -translate-y-1/2">
+            <img src="images/Vectors.png" alt="">
+        </div>
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col-span-10 flex items-center justify-between">
+                    <div class="w-2/5">
+                        <small class="text-base">Why join Design code ?</small>
+                        <h4 class="text-5xl mt-4 mb-4">Dont skip Design</h4>
+                        <p class="text-2xl pr-12">Most coding courses treat design as an afterthought. Yet, the process of making apps require
+                            the understanding of both. </p>
 
-    <section class="why-section">
-        <div class="container grid grid-cols-2 mx-auto p-2">
-            <div class="flex flex-col left-section">
-                <span class="short-title mb-2">Why join Design+Code?</span>
-                <h1 class="title mb-2">Don’t skip design.</h1>
-                <p class="content">Most coding courses treat design as an afterthought. Yet, the process of making apps require the
-                    understanding of both. </p>
-            </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="243" height="182" viewBox="0 0 243 182" fill="none">
+                            <path d="M140.428 152.305H101.488L89.6837 140.204L87.9912 113.149H123.969V138.465L140.428 152.305Z" fill="#4AC7E2"/>
+                            <path d="M197.187 126.808H47.0497C42.5113 126.808 38.1044 123.119 37.2072 118.568L21.1345 37.057C20.2371 32.5058 23.1887 28.8167 27.7272 28.8167H177.865C182.403 28.8167 186.81 32.5058 187.707 37.057L203.78 118.568C204.677 123.119 201.725 126.808 197.187 126.808Z" fill="url(#paint0_linear_364_131)"/>
+                            <path d="M178.202 149.575H55.0123V152.94H178.202V149.575Z" fill="#3913B8"/>
+                            <g filter="url(#filter0_b_364_131)">
+                                <path d="M65.7154 59.3633H3.52502V63.2126H65.7154V59.3633Z" fill="#4AC7E2" fill-opacity="0.5"/>
+                            </g>
+                            <g filter="url(#filter1_b_364_131)">
+                                <path d="M67.8668 67.8223H5.67651V71.6713H67.8668V67.8223Z" fill="#4AC7E2" fill-opacity="0.5"/>
+                            </g>
+                            <g filter="url(#filter2_b_364_131)">
+                                <path d="M90.4753 76.2776H7.11169V80.1266H90.4753V76.2776Z" fill="#4AC7E2" fill-opacity="0.5"/>
+                            </g>
+                            <path d="M7.11218 38.1726H203.964" stroke="#78D2EE" stroke-width="0.5" stroke-miterlimit="10"/>
+                            <g filter="url(#filter3_b_364_131)">
+                                <path d="M237.411 79.1967L239.295 88.257C240.247 92.8352 237.331 96.5465 232.782 96.5465H123.622C119.073 96.5465 114.614 92.8352 113.662 88.257L111.779 79.1967C110.827 74.6185 113.743 70.9072 118.292 70.9072H227.452C232 70.9072 236.46 74.6185 237.411 79.1967Z" fill="#4AC7E2" fill-opacity="0.5"/>
+                            </g>
+                            <path d="M128.262 87.4998C125.482 87.4998 122.756 85.2315 122.174 82.4333C121.593 79.635 123.375 77.3667 126.155 77.3667C128.936 77.3667 131.661 79.635 132.243 82.4333C132.824 85.2315 131.042 87.4998 128.262 87.4998Z" fill="#3913B8"/>
+                            <path d="M140.094 78.6624H225.972" stroke="#005B9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M141.664 86.2107H227.541" stroke="#005B9D" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M75.0215 105.213H160.899" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M76.5906 112.761H162.468" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M184.46 59.3633H140.432" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10"/>
+                            <path d="M180.994 54.0674H165.979" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10"/>
+                            <path d="M177.361 48.7644H113.418" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10"/>
+                            <path d="M33.0584 35.8819C33.8767 35.8819 34.5401 35.2166 34.5401 34.3961C34.5401 33.5756 33.8767 32.9104 33.0584 32.9104C32.2402 32.9104 31.5768 33.5756 31.5768 34.3961C31.5768 35.2166 32.2402 35.8819 33.0584 35.8819Z" fill="#B5CDFB"/>
+                            <path d="M39.289 35.8819C40.1073 35.8819 40.7707 35.2166 40.7707 34.3961C40.7707 33.5756 40.1073 32.9104 39.289 32.9104C38.4708 32.9104 37.8074 33.5756 37.8074 34.3961C37.8074 35.2166 38.4708 35.8819 39.289 35.8819Z" fill="#4AC7E2"/>
+                            <path d="M45.519 35.8819C46.3373 35.8819 47.0006 35.2166 47.0006 34.3961C47.0006 33.5756 46.3373 32.9104 45.519 32.9104C44.7007 32.9104 44.0374 33.5756 44.0374 34.3961C44.0374 35.2166 44.7007 35.8819 45.519 35.8819Z" fill="#4AC7E2"/>
+                            <path d="M3.52502 63.2134H65.7154" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M5.67554 71.6738H67.8661" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M7.11182 80.1316H90.4756" stroke="#FFE458" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <defs>
+                                <filter id="filter0_b_364_131" x="-36.475" y="19.3633" width="142.19" height="83.8494" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_364_131"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_364_131" result="shape"/>
+                                </filter>
+                                <filter id="filter1_b_364_131" x="-34.3235" y="27.8223" width="142.19" height="83.8489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_364_131"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_364_131" result="shape"/>
+                                </filter>
+                                <filter id="filter2_b_364_131" x="-32.8883" y="36.2776" width="163.364" height="83.8491" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_364_131"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_364_131" result="shape"/>
+                                </filter>
+                                <filter id="filter3_b_364_131" x="71.5986" y="30.9072" width="207.876" height="105.639" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_364_131"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_364_131" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_364_131" x1="20.4651" y1="29.12" x2="204.609" y2="126.979" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3913B8"/>
+                                    <stop offset="1" stop-color="#5935D3" stop-opacity="0.5"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
 
-            <div class="benefit-section">
-                <div class="benefit-item">
-                    <img src="images/Pen%20Tool%20Outline%20Color.svg" alt="" class="benefit-item-img">
-                    <div class="benefit-content">
-                        <h4>For Developers</h4>
-                        <p>Don’t skip design or animation. Learn the best techniques from a designer who codes.</p>
+                    <div class="w-1/5 flex justify-center">
+                        <img src="/images/Separator.svg" alt="">
+                    </div>
+
+                    <div class="w-2/5">
+                       <div class="benefit-item mb-4 background-custom p-5 rounded-2xl flex gap-5">
+                           <div class="bg-white w-14 h-14 rounded-50 flex justify-center items-center">
+                               <img src="images/Pen Tool Outline Color.svg" alt="">
+                           </div>
+
+                           <div class="benefit-content w-4/5">
+                                <span class="text-lg font-bold mb-2">For Developers</span>
+                               <p class="mt-2 text-base">Don’t skip design or animation. Learn the best techniques from a designer who codes.</p>
+                           </div>
+                       </div>
+
+                        <div class="benefit-item mb-4 background-custom p-5 rounded-2xl flex gap-5">
+                            <div class="bg-white w-14 h-14 rounded-50 flex justify-center items-center">
+                                <img src="images/Large icon Code.svg" alt="">
+                            </div>
+
+                            <div class="benefit-content w-4/5">
+                                <span class="text-lg font-bold mb-2">For Designers</span>
+                                <p class="mt-2 text-base">Learn by building UIs and animations in visual steps, taught from a designer’s perspective.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item mb-4 background-custom p-5 rounded-2xl flex gap-5">
+                            <div class="bg-white w-14 h-14 rounded-50 flex justify-center items-center">
+                                <img src="images/Group.svg" alt="">
+                            </div>
+
+                            <div class="benefit-content w-4/5">
+                                <span class="text-lg font-bold mb-2">For Beginners</span>
+                                <p class="mt-2 text-base">Just started? No problem. Our courses are visual and progressive. We try to not overwhelm at first.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </template>
 <script>
 
 </script>
+
 <style>
-.why-section {
+
+.overlay {
+    position: absolute;
     width: 100%;
-    margin-top: 5%;
+    top: -10%;
+    background: url("/images/Background.png") no-repeat;
+    background-size: cover;
+    z-index: -9999;
 }
-.left-section {
-    max-width: 420px;
-}
-.short-title {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 22.1px */
-}
-.title {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; /* 22.1px */
-}
-.content {
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.benefit-item {
-    display: flex;
-    border-radius: 20px;
+.background-custom {
     background: rgba(88, 105, 255, 0.10);
     backdrop-filter: blur(15px);
 }
-.benefit-item-img {
-    width: 100%;
-    height: 60px;
+.rounded-50 {
+    border-radius: 50%;
 }
+
 </style>

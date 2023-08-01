@@ -70,5 +70,18 @@ import Sidebar from "../components/Sidebar.vue";
 export default {
     name: "Discussions",
     components: {Sidebar},
+    data() {
+        return {
+            tags: []
+        }
+    },
+    methods: {
+        async fetchTags() {
+            console.log('hello')
+        }
+    },
+    mounted() {
+        this.fetchTags()
+    }
 }
 </script>

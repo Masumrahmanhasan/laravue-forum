@@ -13,14 +13,14 @@ use Illuminate\Http\JsonResponse;
  */
 class TagController extends Controller
 {
-    public function __construct(TagService $tagService, sendApiResponse $sendApiResponse)
+    use SendApiResponse;
+    public function __construct(TagService $tagService)
     {
         $this->tagService = $tagService;
-        $this->sendApiResponse = $sendApiResponse;
     }
     public function index(): JsonResponse
     {
         $tags = $this->tagService->getTags();
-        return $this->sendApiResponse->success($tags);
+        return $this->success($tags);
     }
 }

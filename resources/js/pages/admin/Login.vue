@@ -1,12 +1,12 @@
 <template>
-    <div class="container-fluid p-0">
+    <div class="container p-0">
         <div class="row m-0">
             <div class="col-12 p-0">
-                <div class="login-card">
+                <div class="login-card items-center m-auto">
                     <div class="px-6 py-6 lg:px-8">
                         <h3 class="mb-8 text-xl font-medium text-slate-900">Log in to LaraForum</h3>
                         <form @submit.prevent="login">
-                            <div class="grid grid-cols-1      filament-forms-component-container gap-6">
+                            <div class="grid grid-cols-1 filament-forms-component-container gap-6">
                                 <div class="col-span-1">
                                     <div class="filament-forms-field-wrapper">
                                         <div class="space-y-2">
@@ -164,10 +164,7 @@
 
 <style scoped>
 .login-card {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
+    max-width: 50%;
 }
 </style>
